@@ -1,0 +1,42 @@
+public class Beverage {
+	private String size;
+	private int num;
+	private String note;
+	private String ice;
+	
+	public int getNum() {
+		return num;
+	}
+	public void setNum(int num) {
+		this.num = num;
+	}
+	
+	public String getNote() {
+		return note;
+	}
+	public void setNote(String note) {
+		this.note = note;
+	}
+	
+	public String isIce() {
+		return ice;
+	}
+	public void setIce(String ice) {
+		this.ice = ice;
+	}
+	
+	public String getSize() {
+		return size;
+	}
+	public void setSize(String size) {
+		this.size = size;
+	}
+	
+	public void showInfo() {
+		System.out.println("购买数量：" + this.num);
+		System.out.println("大小：" + this.size);
+		System.out.println("备注：" + this.note);
+		System.out.println("是否加冰:" + this.ice);
+	}
+
+}
