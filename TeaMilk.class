@@ -1,0 +1,24 @@
+public class TeaMilk extends Beverage {
+	private static final String name = "奶茶";
+	private static final int price_mid = 8;
+	private static final int price_big = 12;
+	private static final int price_extraBig = 15;
+
+	@Override
+	public void showInfo() {
+		// TODO Auto-generated method stub
+		System.out.println("您购买了：" + TeaMilk.name);
+		super.showInfo();
+		switch(super.getSize()) {
+		case "超大杯":
+			System.out.println("价格:" + super.getNum()*price_extraBig);
+			break;
+		case "大杯":
+			System.out.println("价格:" + super.getNum()*price_big);
+			break;
+		case "中杯":
+			System.out.println("价格:" + super.getNum()*price_mid);
+			break;
+		}
+	}
+}
